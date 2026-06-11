@@ -14,6 +14,8 @@ The work moves from data exploration through model building, validation, and a c
 1. **Exploratory analysis** — visualizing the series (`autoplot`, `gg_season`, `gg_subseries`), identifying trend, seasonality and heteroscedasticity, choosing a Box-Cox transformation (Guerrero method), and STL decomposition.
 2. **ETS vs. benchmarks & cross-validation** — fitting an automatic ETS model against Mean, Naïve and Seasonal-Naïve baselines; residual diagnostics (ACF, Ljung-Box); and time-series cross-validation, with a discussion of why CV is the more reliable accuracy estimate.
 3. **ARIMA model selection** — unit-root testing (KPSS), determining the required differencing, reading ACF/PACF plots to propose candidate models, and comparing manual specifications against an auto-selected ARIMA by AICc and test-set RMSE.
+
+
 **Project** (`project/`)
  
 A complete forecasting study answering 12 structured questions: Box-Cox transformation, STL decomposition, stationarity testing, building a short-list of ETS and ARIMA candidates, model comparison via AICc and a 24-month test set, residual diagnostics (Ljung-Box), out-of-sample point forecasts with 80% prediction intervals, **back-testing the forecasts against newly-released ABS data**, and a discussion of model benefits, limitations, and a proposed annual re-forecasting process.
